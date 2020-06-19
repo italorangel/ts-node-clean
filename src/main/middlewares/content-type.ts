@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express'
+import { RequestHandler } from 'express'
 
-export const contentType = (request: Request, response: Response, next: NextFunction): void => {
+export const contentType: RequestHandler = (request, response, next): void => {
   response.type('json')
   next()
 }
