@@ -1,8 +1,6 @@
 import { SingUpController } from './singup'
-import { MissingParamError, ServerError, InvalidParamError } from '../erros'
-import { EmailValidator } from '../protocols'
-import { AccountModel } from '../../domain/models/account'
-import { AddAccount, AddAccountModel } from '../../domain/usecases/add-account'
+import { MissingParamError, ServerError, InvalidParamError } from '../../erros'
+import { EmailValidator, AccountModel, AddAccount, AddAccountModel } from './singup-protocol'
 
 interface SutTypes {
   sut: SingUpController
